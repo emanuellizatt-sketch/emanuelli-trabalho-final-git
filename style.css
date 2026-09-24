@@ -1,0 +1,83 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body {font-family: Arial, sans-serif; background-color: #111111; color: #ffffff; line-height: 1.6;}
+/* =========================
+   CABEÇALHO
+========================= */
+header {background-color: #000000; padding: 25px 8%; display: flex; justify-content: space-between; align-items: center;border-bottom: 1px solid #333333;}
+header h1 {font-size: 32px;letter-spacing: 2px;color: #ffffff;}
+/* =========================
+   MENU
+========================= */
+nav {display: flex; gap: 30px;}
+nav a {color: #ffffff; text-decoration: none; font-size: 16px; transition: 0.3s;}
+nav a:hover {color: #aaaaaa;}
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+main {width: 100%;}
+/* =========================
+   SEÇÕES
+========================= */
+section { padding: 80px 8%; min-height: 400px;}
+section h2 {font-size: 36px; margin-bottom: 25px; color: #ffffff;}
+section p {max-width: 800px; font-size: 18px; color: #cccccc; margin-bottom: 15px;}
+/* =========================
+   INÍCIO
+========================= */
+#inicio {min-height: 650px; padding: 60px 8%; display: flex; align-items: center; justify-content: space-between; gap: 80px;
+background: linear-gradient(135deg,#000000, #181818 );}
+.inicio-texto {flex: 1; max-width: 600px;}
+.inicio-texto h2 {font-size: 80px; margin-bottom: 10px; letter-spacing: 4px;}
+.inicio-texto h3 {font-size: 25px; font-weight: normal; color: #bbbbbb; margin-bottom: 20px;}
+.inicio-texto p {font-size: 20px; color: #cccccc; margin-bottom: 30px;}
+.inicio-imagem {width: 480px; height: 550px; flex-shrink: 0; overflow: hidden; border-radius: 10px;}
+.inicio-imagem img {width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(100%);}
+/* SEÇÃO O ARTISTA */
+#artista {background-color: #111111; padding: 80px 8%;}
+#artista h2 { font-size: 50px; margin-bottom: 50px; letter-spacing: 2px;}
+.artista-conteudo {display: grid; grid-template-columns: 1fr 1fr; gap: 50px;}
+.artista-conteudo > div {background-color: #1c1c1c; padding: 35px; border-radius: 10px; border: 1px solid #2d2d2d;}
+.artista-conteudo h3 {font-size: 26px; margin-bottom: 20px; color: #ffffff;}
+.artista-conteudo p {font-size: 17px; line-height: 1.8; color: #cfcfcf; margin-bottom: 18px;}
+/* Efeito ao passar o mouse */
+.artista-conteudo > div {transition: 0.3s;}
+.artista-conteudo > div:hover { transform: translateY(-5px); border-color: #555555;}
+/* Celular */
+@media (max-width: 768px) { .artista-conteudo {grid-template-columns: 1fr; gap: 25px;}
+    #artista h2 {font-size: 40px;} }
+/* =========================
+   MÚSICAS
+========================= */
+#musicas {background-color: #181818;}
+.musicas-container {display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px;}
+.musica {background-color: #242424; padding: 15px; border-radius: 10px; text-align: center;}
+.musica img {width: 100%; height: 250px; object-fit: cover; border-radius: 8px; display: block;}
+.musica h3 {margin-top: 15px; font-size: 18px; color: #ffffff;}
+/* =========================
+   CONTATO
+========================= */
+#contato { background-color: #181818;}
+.redes-sociais {display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap;}
+.redes-sociais a {display: inline-block; padding: 15px 25px; background-color: #242424; color: #ffffff; text-decoration: none;
+ border-radius: 8px; font-size: 17px; transition: 0.3s;}
+.redes-sociais a:hover {background-color: #444444; transform: translateY(-4px);}
+/* =========================
+   RODAPÉ
+========================= */
+footer {background-color: #000000; text-align: center; padding: 25px; border-top: 1px solid #333333;}
+footer p {color: #999999; font-size: 14px;}
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+header { flex-direction: column; gap: 20px; text-align: center;}
+    nav { flex-wrap: wrap; justify-content: center; gap: 15px;}
+    section { padding: 60px 6%;}
+    #inicio h2 { font-size: 45px;} }
+.botao-ouvir { margin-top: 15px; padding: 10px 20px; background-color: #ffffff; color: #000000; border: none; border-radius: 5px;
+cursor: pointer; font-size: 15px; font-weight: bold;}
+.botao-ouvir:hover {background-color: #cccccc;}
